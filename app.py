@@ -20,7 +20,6 @@ def generate():
     safe_filename = keyword.lower().replace(" ", "_")
 
     # ✅ Save as HTML
-    # ✅ Save as styled HTML
     html_path = os.path.join("generated_posts", f"{safe_filename}.html")
     with open(html_path, "w", encoding="utf-8") as f:
         html_content = blog_post.replace("{AFF_LINK_1}", "<a href='https://example.com/product1'>Product 1</a>") \
